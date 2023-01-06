@@ -1,7 +1,7 @@
 @import "./fonts";
 @import "./variables";
 @import "./banner";
-@import "./header";
+@import "./nav";
 @import "./about";
 @import "./steps";
 @import "./bookNow";
@@ -43,7 +43,7 @@ a {
         background-image: url(../img/BG/Header-bg.png);
     }
 
-    &_header {
+    &_nav {
         background-color: $secondary-color;
         // position: sticky;
         // top: 0;

@@ -157,65 +157,65 @@
     letter-spacing: 0;
   }
 }
-.header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #5373FD;
   padding: 32px 0;
 }
-.header__logo {
+.nav__logo {
   text-transform: uppercase;
   font-family: "JosefinSans-Bold";
   font-size: 1.5rem;
   line-height: 1.75rem;
   letter-spacing: 0.1em;
 }
-.header__nav-list {
+.nav__nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.header__nav-item {
+.nav__nav-item {
   list-style: none;
 }
-.header__nav-item + .header__nav-item {
+.nav__nav-item + .nav__nav-item {
   padding-left: 40px;
 }
-.header__nav-link {
+.nav__nav-link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
-.header__nav-link:hover {
+.nav__nav-link:hover {
   color: orange;
 }
 
 @media screen and (max-width: 1024px) {
-  .header {
+  .nav {
     flex-direction: column;
     gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
+  .nav {
     flex-direction: column;
     justify-content: space-between;
   }
 }
 @media screen and (max-width: 613px) {
-  .header {
+  .nav {
     flex-direction: column;
     justify-content: space-between;
   }
-  .header__nav-list {
+  .nav__nav-list {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
     gap: 30px;
   }
-  .header__nav-item + .header__nav-item {
+  .nav__nav-item + .nav__nav-item {
     padding-left: 0px;
   }
 }
@@ -640,7 +640,7 @@ a {
 .wrapper_banner {
   background-image: url(../img/BG/Header-bg.png);
 }
-.wrapper_header {
+.wrapper_nav {
   background-color: #5373FD;
 }
 .wrapper_about {
