@@ -6,70 +6,205 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" type="image/png" href="./img/favicon/favicon.ico"/>
   <title>Travel with us</title>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper wrapper_banner">
     <section class="banner">
+      <div class="banner__content">
+        <h1 class="banner__title">Bhromaon</h1>
+        <p class="banner__subTitle">Safe Travel Anywhere</p>
+        <div class="banner__search-box">
+          <input class="banner__input" type="search" placeholder="Search Your Travel Destination">
 
-      <div class="banner__title">Bhromaon</div>
-      <div class="banner__subTitle">Safe Travel Anywhere</div>
-      <form action="" class="banner__search-form"></form>
-      <div class="banner__search-box">
-
-        <input class="banner__input" type="search" placeholder="Search Your Travel Destination">
-        <button class="banner__button button" type="submit">
-          <svg class="banner__button-icon">
-            <use xlink:href="./img/sprite/steps-sprite.svg#search"></use>
-          </svg>
-          <span class="banner__button-name">Search</span>
-        </button>
+          <button class="banner__button button" type="submit">
+            <svg class="banner__button-icon">
+              <use xlink:href="./img/sprite/steps-sprite.svg#search"></use>
+            </svg>
+            <p class="banner__button-name">Search</p>
+          </button>
+        </div>
       </div>
-      </form>
 
-      <a class="banner__anchor" href="#">
+      <a class="banner__anchor" href="#Bhromaon">
         <span class="banner__anchor-name">Scroll Down</span>
-        <svg class="banner__anchor-icon" width="56" height="64" viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M25.8786 47.6845L1.58575 23.3915C0.414125 22.2199 0.414125 20.3204 1.58575 19.1489L4.41913 16.3155C5.58875 15.1459 7.48438 15.1436 8.65675 16.3105L28 35.5631L47.3431 16.3105C48.5155 15.1436 50.4111 15.1459 51.5807 16.3155L54.4141 19.1489C55.5857 20.3205 55.5857 22.22 54.4141 23.3915L30.1214 47.6845C28.9497 48.856 27.0503 48.856 25.8786 47.6845Z" fill="currentColor"/>
+        <svg class="banner__anchor-icon" width="56" height="64" viewBox="0 0 56 64" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25.8786 47.6845L1.58575 23.3915C0.414125 22.2199 0.414125 20.3204 1.58575 19.1489L4.41913 16.3155C5.58875 15.1459 7.48438 15.1436 8.65675 16.3105L28 35.5631L47.3431 16.3105C48.5155 15.1436 50.4111 15.1459 51.5807 16.3155L54.4141 19.1489C55.5857 20.3205 55.5857 22.22 54.4141 23.3915L30.1214 47.6845C28.9497 48.856 27.0503 48.856 25.8786 47.6845Z"
+            fill="currentColor" />
         </svg>
       </a>
     </section>
   </div>
 
+  <div class="wrapper wrapper_header">
+    <div class="container">
+      <section id="Bhromaon" class="header">
+        <a href="#" class="header__logo">Bhromaon</a>
+        <nav>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Who We Are</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">What We Do</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Travel With Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_about">
+    <div class="container">
+      <section class="about">
+        <div class="about__content">
+          <h2 class="about__content-title">Why Choose Us</h2>
+          <p class="about__content-text">Tion and dislike men who are so beguiled and demoralized by desire
+            by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+            <br>
+            <br>
+            Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+            desire, that.
+          </p>
+          <button class="about__button button" type="submit">Explore Places</button>
+        </div>
+        <div class="about__images">
+          <img class="about__images-img" src="./img/BG/Why-choose-us-photo-2.png" alt="mountain">
+          <img class="about__images-img" src="./img/BG/Why-choose-us-photo-1.png" alt="lake">
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_steps">
+    <div class="container">
+      <section class="steps">
+        <div class="steps__icon-box steps__icon-box_el1">
+          <div class="steps__icon-wrapper">
+            <svg class="steps__icon steps__icon_search">
+              <use xlink:href="./img/sprite/steps-sprite.svg#search"></use>
+            </svg>
+          </div> 
+          <p class="steps__icon-text">Search Places</p>
+        </div>
+
+        <div class="steps__icon-box steps__icon-box_el2">
+          <div class="steps__icon-wrapper">
+            <svg class="steps__icon steps__icon_check-circle">
+              <use xlink:href="./img/sprite/steps-sprite.svg#check-circle"></use>
+            </svg>
+          </div>
+          <p class="steps__icon-text">Select Places</p>
+        </div>
+
+        <div class="steps__icon-box steps__icon-box_el3">
+          <div class="steps__icon-wrapper">
+            <svg class="steps__icon steps__icon_trumbs-up">
+              <use xlink:href="./img/sprite/steps-sprite.svg#thumbs-up"></use>
+            </svg>
+          </div>
+          <p class="steps__icon-text">Book & Enjoy</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+  <div class="wrapper wrapper_bookNow-1">
+    <div class="container">
+      <section class="bookNow">
+        <div class="bookNow__card">
+          <p class="bookNow__card-country">Spain</p>
+          <h3 class="bookNow__card-title">Grand Spain Madrid</h3>
+          <p class="bookNow__card-text">But I must explain to you how all this mistaken idea of account to denouncing
+            pleasure and praising pain was account born and I account will give you a complete account of the system</p>
+          <button type="submit" class="bookNow__card-button button">book now</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_bookNow-2">
+    <div class="container">
+      <section class="bookNow bookNow_fl-end">
+        <div class="bookNow__card">
+          <p class="bookNow__card-country">Spain</p>
+          <h3 class="bookNow__card-title">Grand Spain Madrid</h3>
+          <p class="bookNow__card-text">But I must explain to you how all this mistaken idea of account to denouncing
+            pleasure and praising pain was account born and I account will give you a complete account of the system</p>
+          <button type="submit" class="bookNow__card-button button">book now</button>
+        </div>
+      </section>
+    </div>
+  </div>
 
 
 
+  <div class="wrapper wrapper_feedback">
+    <div class="container">
+      <section class="feedback">
+        <h2 class="feedback__title">What Our Tourists Say</h2>
+        <div class="feedback__content-box">
+          <img class="feedback__img" src="./img/BG/Sam_Simon.png" alt="Sam_Simon">
+          <div class="feedback__comment">
+            <h3 class="feedback__comment-title">Sam Sumon</h3>
+            <div class="feedback__comment-text-wrapper">
+              <div class="feedback__comment-quote-box">
+                <svg class="feedback__comment-quote" width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M58 32H48V24C48 19.5875 51.5875 16 56 16H57C58.6625 16 60 14.6625 60 13V7C60 5.3375 58.6625 4 57 4H56C44.95 4 36 12.95 36 24V54C36 57.3125 38.6875 60 42 60H58C61.3125 60 64 57.3125 64 54V38C64 34.6875 61.3125 32 58 32ZM22 32H12V24C12 19.5875 15.5875 16 20 16H21C22.6625 16 24 14.6625 24 13V7C24 5.3375 22.6625 4 21 4H20C8.95 4 0 12.95 0 24V54C0 57.3125 2.6875 60 6 60H22C25.3125 60 28 57.3125 28 54V38C28 34.6875 25.3125 32 22 32Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="feedback__comment-text">But I must explain to you how all this mistaken idea of account to
+                denouncinpleasure
+                and praising pain But I must explain to you how all this mistaken idea of account to nai denouncing
+                pleasure
+                and praising pain was account born and I account will give you a complete account of the system was
+                account
+                born and I account will give you a nai the complete account of the system
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
 
+  <div class="wrapper wrapper_footer">
+    <section class="footer">
+      <h4 class="footer__title">Bhromaon</h4>
+      <p class="footer__subTitle">Safe Travel Anywhere</p>
+      <div class="footer__icon-box">
+        <svg class="footer__icon">
+          <use xlink:href="./img/sprite/footer-sprite.svg#facebook-f"></use>
+        </svg>
+        <svg class="footer__icon">
+          <use xlink:href="./img/sprite/footer-sprite.svg#twitter"></use>
+        </svg>
+        <svg class="footer__icon">
+          <use xlink:href="./img/sprite/footer-sprite.svg#linkedin"></use>
+        </svg>
+        <svg class="footer__icon">
+          <use xlink:href="./img/sprite/footer-sprite.svg#youtube"></use>
+        </svg>
+        <svg class="footer__icon">
+          <use xlink:href="./img/sprite/footer-sprite.svg#pinterest"></use>
+        </svg>
+      </div>
+    </section>
+  </div>
 
-  <!-- steps-sprite -->
-  <!-- <svg class="icon">
-        <use xlink:href="./img/sprite/steps-sprite.svg#check-circle"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/steps-sprite.svg#search"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/steps-sprite.svg#thumbs-up"></use>
-      </svg> -->
-
-  <!-- footer-sprite -->
-  <!-- <svg class="icon">
-        <use xlink:href="./img/sprite/footer-sprite.svg#youtube"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/footer-sprite.svg#pinterest"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/footer-sprite.svg#linkedin"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/footer-sprite.svg#twitter"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="./img/sprite/footer-sprite.svg#facebook-f"></use>
-      </svg> -->
 </body>
 
 </html>

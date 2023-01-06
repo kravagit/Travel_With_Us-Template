@@ -1,0 +1,53 @@
+.footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+
+    &__title {
+        font-family: $section-title-font;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__subTitle {
+        padding: 8px 0 22px;
+        font-family: $main-font;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.2em;
+    }
+
+    &__icon-box {
+    }
+
+    &__icon {
+        margin: 0 16px;
+        width: 32px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        color: $main-color;
+        :hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer{
+        padding: 60px 0;
+        &__icon{
+            margin: 0 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer{
+        padding: 40px 0;
+    }
+}

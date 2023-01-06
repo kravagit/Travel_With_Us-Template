@@ -1,143 +1,92 @@
 @import "./fonts";
+@import "./variables";
+@import "./banner";
+@import "./header";
+@import "./about";
+@import "./steps";
+@import "./bookNow";
+@import "./footer";
+@import "./feedback";
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-$main-color:#fff;
-$button-bg-color:#5373FD;
-$header-bg-color:#5373FD;
-$section-title-font:"JosefinSans-Bold";
-$section-sub-title-font:"JosefinSans-Regular";
-$scroll-font:"JosefinSans-Regular";
-$article-title-font:"Aleo-Regular";
-$button-font:"Aleo-Regular";
-$header-nav-font:"Aleo-Regular";
-$placeholder-font:"JosefinSans-Regular";
-$card-title-font:"JosefinSans-Regular";
-$text-font:"JosefinSans-Light";
 
-
-body{
+body {
     color: $main-color;
+    font-size: 16px;
 }
 
-.container{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
     max-width: 1320px;
     margin: 0 auto;
 }
+
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
-  }
-
-.button {
-    background-color: $button-bg-color;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-// banner
-
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url(../img/BG/Header-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    background-position: center;
 
-        
-		&__title {
-            font-size: 48px;
-            line-height: 52px;
-            font-family: $section-title-font;
-            text-transform: uppercase;
-            padding-bottom: 8px;
-		}
+    &_banner {
+        background-image: url(../img/BG/Header-bg.png);
+    }
 
-		&__subTitle {
-            font-size: 22px;
-            line-height: 28px;
-            letter-spacing: 0.31em;
-            font-family:$section-sub-title-font;
-            padding-bottom: 48px;
-		}
-        &__search-box{
-            width: 650px;
-            background-color: #fff;
-            display:flex;
-            justify-content: space-between;
-        }
-		&__search-form {
+    &_header {
+        background-color: $secondary-color;
+        // position: sticky;
+        // top: 0;
+    }
 
-		}
+    &_about {
+        background-image: url(../img/BG/Why-bg.png);
+    }
 
-		&__input {
-            border: none;
-            width: 100%;
-            &::placeholder {
-                font-family: $placeholder-font;
-                text-overflow: ellipsis;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: 0.2em;
-            }
-		}
+    &_steps {
+        background-color: #333333;
+    }
 
-		&__button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 24px;
-            margin: 4px;
-		}
+    &_bookNow-1 {
+        background-image: url(../img/BG/house-bg.png);
+    }
 
-		&__button-icon {
-            width: 16px;
-            aspect-ratio: 1 / 1;
-            fill: $main-color;
-		}
+    &_bookNow-2 {
+        background-image: url(../img/BG/spain-bg.png);
+    }
 
-		&__button-name {
-            font-family:$article-title-font;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 0.1em;
-            padding-left: 12px;
-            text-transform: uppercase;
-		}
+    &_feedback {
+        background-image: url(../img/BG/Sam_Simon-bg.png);
+    }
 
-		&__anchor {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 120px;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color:$main-color;
-		}
+    &__footer {
+        background-color: #000000;
+    }
+}
 
-		&__anchor-name {
-            font-family: $scroll-font;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 0.2em;
-            padding-bottom: 8px;
-		}
+.button {
+    background-color: $secondary-color;
+    border: none;
+    color: $main-color;
+    cursor: pointer;
 
-		&__anchor-icon {
-            width: 14px;
-            height: 16px;
-            color: $main-color;
-		}
+    &:hover {
+        background-color: #3954ca;
+    }
+}
+
+@media screen and (max-width: 1430px) and (min-width: 320px) {
+    .container {
+        padding: 0 30px;
+    }
 }

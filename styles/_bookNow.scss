@@ -1,0 +1,62 @@
+.bookNow {
+    padding: 220px 0 120px;
+    display: flex;
+    justify-content: flex-start;
+    &_fl-end{
+        justify-content: flex-end;
+    }
+
+    &__card {
+        background-color:rgba(35, 35, 35, 0.9);
+        width: 50%;
+        padding: 44px 32px;
+    }
+
+    &__card-country {
+        font-family: $text-font;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+    }
+
+    &__card-title {
+        font-family: $main-font;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding: 16px 0;
+    }
+
+    &__card-text {
+        font-family: $text-font;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.1em;
+    }
+
+    &__card-button {
+        margin-top: 24px;
+        padding: 20px 56px;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.07em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .bookNow{
+        &__card{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bookNow{
+        &__card{
+            text-align: center;
+        }
+    }
+}
