@@ -49,7 +49,7 @@ a {
         // top: 0;
     }
 
-    &_about {
+    &_Why-Choose-Us {
         background-image: url(../img/BG/Why-bg.png);
     }
 
@@ -105,5 +105,11 @@ a {
 @media screen and (max-width: 1430px) and (min-width: 320px) {
     .container {
         padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1320px){
+    .wrapper_feedback{
+        background-position: 20% 100%;
     }
 }

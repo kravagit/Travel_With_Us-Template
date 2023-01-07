@@ -47,6 +47,10 @@
     text-transform: capitalize;
     width: 100%;
 
+    :focus{
+      outline: none;
+    }
+
     &::placeholder {
       font-family: $placeholder-font;
       font-size: 0.875rem;
@@ -144,5 +148,3 @@
     }
   }
 }
-
-@media screen and (max-width: 375px) {}
