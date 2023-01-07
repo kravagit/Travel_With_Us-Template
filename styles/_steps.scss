@@ -16,14 +16,17 @@
         justify-content: center;
         align-items: center;
         white-space: nowrap;
-        &_el1{
+
+        &_el1 {
             grid-area: 2 / 1 / 3 / 2;
         }
-        &_el2{
+
+        &_el2 {
             grid-area: 2 / 3 / 3 / 4;
         }
-        &_el3{
-            grid-area: 2 / 5 / 3 / 6; 
+
+        &_el3 {
+            grid-area: 2 / 5 / 3 / 6;
         }
     }
 
@@ -42,11 +45,11 @@
         aspect-ratio: 1 / 1;
 
         &_search {
-            color: #5373FD ;
+            color: #5373FD;
         }
 
         &_check-circle {
-            color:#ee6161;
+            color: #ee6161;
         }
 
         &_trumbs-up {
@@ -68,15 +71,17 @@
             font-size: 1.875rem;
         }
     }
-    
-    
+
+
 }
+
 @media screen and (max-width: 1024px) {
     .steps__icon-text {
-            font-size: 1.5rem;
-        }
-    
+        font-size: 1.5rem;
+    }
+
 }
+
 @media screen and (max-width: 768px) {
     .steps {
         display: flex;

@@ -133,12 +133,11 @@
     &__button-name {
       display: none;
     }
-    // &__content {
-    //   width: 80%;
-    // }
+
     &__input {
       font-size: 1rem;
       padding: 10px;
+
       &::placeholder {
         letter-spacing: 0;
       }

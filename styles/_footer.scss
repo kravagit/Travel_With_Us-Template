@@ -22,8 +22,7 @@
         letter-spacing: 0.2em;
     }
 
-    &__icon-box {
-    }
+    &__icon-box {}
 
     &__icon {
         margin: 0 16px;
@@ -31,23 +30,25 @@
         aspect-ratio: 1 / 1;
         cursor: pointer;
         color: $main-color;
-        :hover{
+
+        :hover {
             color: $secondary-color;
         }
     }
 }
 
 @media screen and (max-width: 576px) {
-    .footer{
+    .footer {
         padding: 60px 0;
-        &__icon{
+
+        &__icon {
             margin: 0 12px;
         }
     }
 }
 
 @media screen and (max-width: 375px) {
-    .footer{
+    .footer {
         padding: 40px 0;
     }
 }

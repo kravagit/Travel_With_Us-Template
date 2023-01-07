@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $secondary-color;
     padding: 32px 0;
 
     &__logo {
@@ -28,11 +27,26 @@
     }
 
     &__nav-link {
+        position: relative;
         color: $main-color;
         text-decoration: none;
         text-transform: uppercase;
-        &:hover{
-            color:orange;
+
+        &:hover::before {
+            width: 100%;
+            left: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            right: 0;
+            height: 0.15em;
+            border-radius: 5px;
+            background-color: $main-color;
+            bottom: -0.3em;
+            transition: 0.3s;
         }
     }
 }
@@ -52,10 +66,12 @@
     }
 
 }
+
 @media screen and (max-width: 613px) {
     .nav {
         flex-direction: column;
         justify-content: space-between;
+
         &__nav-list {
             flex-direction: column;
             justify-content: space-between;
@@ -63,6 +79,7 @@
             margin-top: 50px;
             gap: 30px;
         }
+
         &__nav-item {
             &+& {
                 padding-left: 0px;
@@ -70,4 +87,3 @@
         }
     }
 }
-

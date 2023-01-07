@@ -65,6 +65,7 @@
                 margin-left: 0;
             }
         }
+
         &__images-img {
             max-width: 100%;
         }
@@ -107,7 +108,8 @@
         width: 350px;
         height: 220px;
     }
-    .about__images{
+
+    .about__images {
         flex-direction: column;
         gap: 24px;
     }
