@@ -269,6 +269,11 @@
 .Why-Choose-Us__button::hover {
   background-color: #3954ca;
 }
+.Why-Choose-Us__images-block {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
 .Why-Choose-Us__images :nth-child(even) {
   margin-left: 50px;
 }
@@ -301,6 +306,9 @@
   .Why-Choose-Us__content {
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+  .Why-Choose-Us__images-block {
     width: 100%;
   }
   .Why-Choose-Us__images {

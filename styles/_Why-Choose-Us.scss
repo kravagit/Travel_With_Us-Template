@@ -38,6 +38,12 @@
         }
     }
 
+    &__images-block{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
     &__images {
         :nth-child(even) {
             margin-left: 50px;
@@ -85,6 +91,10 @@
             width: 100%;
         }
 
+        &__images-block{
+            width: 100%;
+        }
+
         &__images {
             display: flex;
             justify-content: center;
@@ -104,6 +114,7 @@
 }
 
 @media screen and (max-width: 576px) {
+
     .Why-Choose-Us__images-img {
         width: 350px;
         height: 220px;
